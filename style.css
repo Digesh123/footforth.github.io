@@ -231,6 +231,7 @@ header{
     background: white;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+   
   
     border-radius: .5rem;
 
@@ -710,6 +711,27 @@ header{
 
 /* MEDIA SCRIN (768px) */
 @media (max-width:768px) {
+
+    .flow
+    {
+        display: none;
+    }
+
+    .mobile-flow
+    {
+        display: contents;
+        padding: 20px;
+    }
+    .mobile-flow h1
+    {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .mobile-flow-content
+    {
+        padding: 20px;
+    }
 
    
     /* header */
