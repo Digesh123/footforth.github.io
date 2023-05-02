@@ -263,35 +263,51 @@ header{
 /* ...............END SERVICES SECTION............. */
 
 /* ...............start flow SECTION............. */
-.flow
-{
-    padding-top: 20px;
+
+#flow{
+    padding-top: 120px;
     background: var(--color-on-black);
     color: var(--color-white);   
-    padding-bottom: 10px; 
-
+    padding-bottom: 100px; 
 }
-.flow-container
-{
+.flow-container p,
+.flow-container h2{
+    text-align: center;
+}
+.flow-container h2{
     margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-
+    margin-bottom: 80px;
 }
 
 .flow-content{
     padding: 40px;
-  
-    display: flex;
-   
+    background: white;
     border-radius: .5rem;
-
     gap: 2rem;
 }
-.flow-border h1{
+.flow-box{
+    background: var(--color-primary-variant);
+    border-radius: .5rem;
+    border: 1px solid #182A3A;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    
+}
+.flow-box img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.flow-border{
+    width: 14rem;
+    height: 6px;
+    background: var(--color-white);
+    margin: 0 auto;
+}
+
+#mobile-flow
+{
+    display: none;
 }
 
 
@@ -712,26 +728,7 @@ header{
 /* MEDIA SCRIN (768px) */
 @media (max-width:768px) {
 
-    .flow
-    {
-        display: none;
-    }
-
-    .mobile-flow
-    {
-        display: contents;
-        padding: 20px;
-    }
-    .mobile-flow h1
-    {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 10px;
-    }
-    .mobile-flow-content
-    {
-        padding: 20px;
-    }
+    
 
    
     /* header */
@@ -756,6 +753,62 @@ header{
     padding: 30px;   
     grid-template-columns: 1fr;
 }
+
+/*flow*/
+
+    #flow
+    {
+        display: none;
+    }
+    
+    #mobile-flow
+    {
+        display:block;
+        background-color: #DED9E2;
+        padding-top: 50px;
+        background: var(--color-on-black);
+        color: var(--color-white);   
+        padding-bottom: 100p
+    }
+
+
+    .mobile-flow-container p,
+    .mobile-flow-container h2{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-flow-container h2{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .mobile-flow-content{
+        padding: 5px;
+        background: white;
+        border-radius: .5rem;
+        gap: 2rem;
+    }
+    .mobile-flow-box{
+        
+        border-radius: .5rem;
+        border: 1px solid #182A3A;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .mobile-flow-border{
+        width: 14rem;
+        height: 6px;
+        background: var(--color-white);
+        margin: 0 auto;
+    }
+
+
+
+
+
+
  /* marketing */
 
 .marketing-cotnainer{
